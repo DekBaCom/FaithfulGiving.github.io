@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>บริจาคได้บุญ และ ลดหย่อนภาษี</title>
+    <script src="https://cdn.tailwindcss.com"></script> <!-- โหลด Tailwind CSS -->
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
+
+    <!-- Navbar -->
+    <nav class="bg-green-500 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white text-2xl font-bold">บริจาคได้บุญ</a>
+            <div class="space-x-4">
+                <a href="#hero" class="text-white">หน้าหลัก</a>
+                <a href="#campaigns" class="text-white">แคมเปญบริจาค</a>
+                <a href="#JointoTax" class="text-white">ตรวจสอบลดหย่อนภาษี</a>
+                <a href="#about" class="text-white">เกี่ยวกับเรา</a>
+                <a href="#contact" class="text-white">ติดต่อเรา</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="bg-blue-600 text-white text-center py-20">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-semibold">ร่วมสร้างสังคมที่ดีขึ้นด้วยการบริจาค</h2>
+            <p class="mt-4 text-lg">เลือกแคมเปญที่คุณสนใจเพื่อช่วยเหลือสังคมและลดหย่อนภาษี</p>
+            <a href="#campaigns" class="mt-8 inline-block bg-yellow-500 text-white py-2 px-6 rounded-lg">ดูแคมเปญบริจาค</a>
+        </div>
+    </section>
+
+    <!-- Campaigns Section -->
+    <section id="campaigns" class="py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-12">แคมเปญบริจาค</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="./images/QAF.jpg" alt="ช่วยเหลือภัยพิบัติน้ำท่วมทางใต้โดยกลุ่ม QAF" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h5 class="text-xl font-semibold">ช่วยเหลือภัยพิบัติ</h5>
+                        <p class="mt-4">ร่วมบริจาคเพื่อช่วยเหลือผู้ประสบภัยน้ำท่วมในภาคใต้</p>
+                        <a href="#" class="mt-4 inline-block bg-green-500 text-white py-2 px-4 rounded-lg">บริจาคเลย</a>
+                    </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="campaign2.jpg" alt="ทำนุบำรุงศาสนสถาน" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h5 class="text-xl font-semibold">ทำนุบำรุงศาสนสถาน</h5>
+                        <p class="mt-4">ร่วมสนับสนุนการพัฒนามัสยิดในชุมชน</p>
+                        <a href="#" class="mt-4 inline-block bg-green-500 text-white py-2 px-4 rounded-lg">บริจาคเลย</a>
+                    </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="campaign3.jpg" alt="บริจาคเพื่อการศึกษา" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h5 class="text-xl font-semibold">บริจาคเพื่อการศึกษา</h5>
+                        <p class="mt-4">ช่วยเหลือการศึกษาของเด็กๆ ในพื้นที่ห่างไกล</p>
+                        <a href="#" class="mt-4 inline-block bg-green-500 text-white py-2 px-4 rounded-lg">บริจาคเลย</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  <!-- Tax Section -->
+  <section id="JointoTax" class="bg-gray-200 py-20">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-semibold mb-8">ตรวจสอบลดหย่อนภาษี</h2>
+        <p class="text-lg">ท่านสามารถตรวจสอบลดหย่อนภาษีได้ด้วยตัวเอง</p>
+    </div>
+</section>
+    <!-- About Section -->
+    <section id="about" class="bg-gray-200 py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-8">เกี่ยวกับเรา</h2>
+            <p class="text-lg">เรามุ่งมั่นที่จะช่วยให้ทุกคนสามารถบริจาคเพื่อทำบุญและลดหย่อนภาษีได้ง่ายๆ ผ่านแคมเปญต่างๆ ที่คัดสรรมาสำหรับคุณ</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-8">ติดต่อเรา</h2>
+            <p class="text-lg">หากคุณมีข้อสงสัยหรือต้องการข้อมูลเพิ่มเติม กรุณาติดต่อเราที่:</p>
+            <a href="mailto:Abdulloh.eg@gmail.com" class="mt-4 inline-block bg-blue-600 text-white py-2 px-6 rounded-lg">ส่งอีเมล์ถึงเรา</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-500 text-white text-center py-6">
+        <p>&copy; 2024 บริจาคได้บุญ | ทุกสิทธิ์สงวน</p>
+    </footer>
+
+</body>
+</html>
