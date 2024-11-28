@@ -4,83 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>บริจาคได้บุญ ลดหย่อนภาษี</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iR8C1X64WeKx3HpeT5s1d5J1nz5n0xJr0h0r1W3d2i4v7F5hXoxsMcsT1j" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script> <!-- โหลด Tailwind CSS -->
 </head>
-<body>
+<body class="bg-gray-100 text-gray-900 font-sans">
+
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-        <div class="container">
-            <a class="navbar-brand" href="#">บริจาคได้บุญ</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#hero">หน้าหลัก</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#campaigns">แคมเปญบริจาค</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">เกี่ยวกับเรา</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">ติดต่อเรา</a></li>
-                </ul>
+    <nav class="bg-green-500 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white text-2xl font-bold">บริจาคได้บุญ</a>
+            <div class="space-x-4">
+                <a href="#hero" class="text-white">หน้าหลัก</a>
+                <a href="#campaigns" class="text-white">แคมเปญบริจาค</a>
+                <a href="#about" class="text-white">เกี่ยวกับเรา</a>
+                <a href="#contact" class="text-white">ติดต่อเรา</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="hero" class="bg-primary text-white text-center py-5">
-        <div class="container">
-            <h2 class="display-4">ร่วมสร้างสังคมที่ดีขึ้นด้วยการบริจาค</h2>
-            <p class="lead">เลือกแคมเปญที่คุณสนใจเพื่อช่วยเหลือสังคมและลดหย่อนภาษี</p>
-            <a href="#campaigns" class="btn btn-light btn-lg">ดูแคมเปญบริจาค</a>
+    <section id="hero" class="bg-blue-600 text-white text-center py-20">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-semibold">ร่วมสร้างสังคมที่ดีขึ้นด้วยการบริจาค</h2>
+            <p class="mt-4 text-lg">เลือกแคมเปญที่คุณสนใจเพื่อช่วยเหลือสังคมและลดหย่อนภาษี</p>
+            <a href="#campaigns" class="mt-8 inline-block bg-yellow-500 text-white py-2 px-6 rounded-lg">ดูแคมเปญบริจาค</a>
         </div>
     </section>
 
     <!-- Campaigns Section -->
-    <section id="campaigns" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">แคมเปญบริจาค</h2>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="campaign1.jpg" class="card-img-top" alt="ช่วยเหลือภัยพิบัติ">
-                        <div class="card-body">
-                            <h5 class="card-title">ช่วยเหลือภัยพิบัติ</h5>
-                            <p class="card-text">ร่วมบริจาคเพื่อช่วยเหลือผู้ประสบภัยน้ำท่วมในภาคใต้</p>
-                            <a href="#" class="btn btn-success">บริจาคเลย</a>
-                        </div>
+    <section id="campaigns" class="py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-12">แคมเปญบริจาค</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="campaign1.jpg" alt="ช่วยเหลือภัยพิบัติ" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h5 class="text-xl font-semibold">ช่วยเหลือภัยพิบัติ</h5>
+                        <p class="mt-4">ร่วมบริจาคเพื่อช่วยเหลือผู้ประสบภัยน้ำท่วมในภาคใต้</p>
+                        <a href="#" class="mt-4 inline-block bg-green-500 text-white py-2 px-4 rounded-lg">บริจาคเลย</a>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="campaign2.jpg" class="card-img-top" alt="ทำนุบำรุงศาสนสถาน">
-                        <div class="card-body">
-                            <h5 class="card-title">ทำนุบำรุงศาสนสถาน</h5>
-                            <p class="card-text">ร่วมสนับสนุนการพัฒนามัสยิดในชุมชน</p>
-                            <a href="#" class="btn btn-success">บริจาคเลย</a>
-                        </div>
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="campaign2.jpg" alt="ทำนุบำรุงศาสนสถาน" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h5 class="text-xl font-semibold">ทำนุบำรุงศาสนสถาน</h5>
+                        <p class="mt-4">ร่วมสนับสนุนการพัฒนามัสยิดในชุมชน</p>
+                        <a href="#" class="mt-4 inline-block bg-green-500 text-white py-2 px-4 rounded-lg">บริจาคเลย</a>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="campaign3.jpg" class="card-img-top" alt="บริจาคเพื่อการศึกษา">
-                        <div class="card-body">
-                            <h5 class="card-title">บริจาคเพื่อการศึกษา</h5>
-                            <p class="card-text">ช่วยเหลือการศึกษาของเด็กๆ ในพื้นที่ห่างไกล</p>
-                            <a href="#" class="btn btn-success">บริจาคเลย</a>
-                        </div>
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="campaign3.jpg" alt="บริจาคเพื่อการศึกษา" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h5 class="text-xl font-semibold">บริจาคเพื่อการศึกษา</h5>
+                        <p class="mt-4">ช่วยเหลือการศึกษาของเด็กๆ ในพื้นที่ห่างไกล</p>
+                        <a href="#" class="mt-4 inline-block bg-green-500 text-white py-2 px-4 rounded-lg">บริจาคเลย</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- About Section -->
+    <section id="about" class="bg-gray-200 py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-8">เกี่ยวกับเรา</h2>
+            <p class="text-lg">เรามุ่งมั่นที่จะช่วยให้ทุกคนสามารถบริจาคเพื่อทำบุญและลดหย่อนภาษีได้ง่ายๆ ผ่านแคมเปญต่างๆ ที่คัดสรรมาสำหรับคุณ</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-8">ติดต่อเรา</h2>
+            <p class="text-lg">หากคุณมีข้อสงสัยหรือต้องการข้อมูลเพิ่มเติม กรุณาติดต่อเราที่:</p>
+            <a href="mailto:info@donationwebsite.com" class="mt-4 inline-block bg-blue-600 text-white py-2 px-6 rounded-lg">ส่งอีเมล์ถึงเรา</a>
+        </div>
+    </section>
+
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2024 บริจาคได้บุญ | สร้างสังคมที่ดีด้วยการบริจาค</p>
+    <footer class="bg-green-500 text-white text-center py-6">
+        <p>&copy; 2024 บริจาคได้บุญ | ทุกสิทธิ์สงวน</p>
     </footer>
 
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybVYG9LrVxMsF02v3F3CzK8v8mHqSc2v4eXy8sYcb8fV9QmjF" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-cu0FB9ZXDh16ZGqQmYnxXGg8J9G7l0I6CzF4tDsMCgXyVSoZJlZGXY4rP/z88ChF" crossorigin="anonymous"></script>
 </body>
 </html>
