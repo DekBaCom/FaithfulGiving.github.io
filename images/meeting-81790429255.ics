@@ -1,0 +1,49 @@
+BEGIN:VCALENDAR
+PRODID:-//zoom.us//iCalendar Event//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+CLASS:PUBLIC
+BEGIN:VTIMEZONE
+TZID:Asia/Bangkok
+LAST-MODIFIED:20240422T053450Z
+TZURL:https://www.tzurl.org/zoneinfo-outlook/Asia/Bangkok
+X-LIC-LOCATION:Asia/Bangkok
+BEGIN:STANDARD
+TZNAME:+07
+TZOFFSETFROM:+0700
+TZOFFSETTO:+0700
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20241130T070043Z
+DTSTART;TZID=Asia/Bangkok:20241130T140000
+DTEND;TZID=Asia/Bangkok:20241130T180000
+SUMMARY:Workshop Python Django 5 with Next.JS 15 and Supabase
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20241214T110000Z;INTERVAL=1;BYDAY=SA
+UID:EVENT-cyMS8M5Sxiy3MT5zeZ5pQ@zoom.us
+TZID:Asia/Bangkok
+DESCRIPTION:Samit Koyom is inviting you to a scheduled Zoom meeting.\n\nJ
+ oin Zoom Meeting\nhttps://us06web.zoom.us/j/81790429255?pwd=HY104pLfMZRr
+ uz9gNBCPyc9O6eRcK2.1\n\nMeeting ID: 817 9042 9255\nPasscode: 977040\n\n-
+ --\n\nOne tap mobile\n+13017158592\,\,81790429255#\,\,\,\,*977040# US (W
+ ashington DC)\n+13052241968\,\,81790429255#\,\,\,\,*977040# US\n\n---\n\
+ nDial by your location\n• +1 301 715 8592 US (Washington DC)\n• +1 305 2
+ 24 1968 US\n• +1 309 205 3325 US\n• +1 312 626 6799 US (Chicago)\n• +1 3
+ 46 248 7799 US (Houston)\n• +1 360 209 5623 US\n• +1 386 347 5053 US\n• 
+ +1 507 473 4847 US\n• +1 564 217 2000 US\n• +1 646 931 3860 US\n• +1 669
+  444 9171 US\n• +1 669 900 6833 US (San Jose)\n• +1 689 278 1000 US\n• +
+ 1 719 359 4580 US\n• +1 929 205 6099 US (New York)\n• +1 253 205 0468 US
+ \n• +1 253 215 8782 US (Tacoma)\n\nMeeting ID: 817 9042 9255\nPasscode: 
+ 977040\n\nFind your local number: https://us06web.zoom.us/u/kcQKjlHhk9\n
+ \n
+LOCATION:https://us06web.zoom.us/j/81790429255?pwd=HY104pLfMZRruz9gNBCPyc
+ 9O6eRcK2.1
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
