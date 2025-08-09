@@ -22,11 +22,18 @@
                 กองทุนอาหารกลางวัน โรงเรียนบ้านจือนือแร
             </p>
             <img src="./images/BanjuenueraeSchool.jpg" width="100%" height="100%" alt="กองทุนอาหารกลางวัน โรงเรียนบ้านจือนือแร" ><br>
-            <img src="./images/BanjuenueraeSchool-QrCode.png" width="90%" height="90%" alt="กองทุนอาหารกลางวัน โรงเรียนบ้านจือนือแร" >
+            <img src="./images/BanjuenueraeSchool-QrCode.png" width="90%" height="90%" alt="กองทุนอาหารกลางวัน โรงเรียนบ้านจือนือแร" id="qrPreviewBtn" class="cursor-pointer">
             <p class="text-gray-700 mb-4">
                 ร่วมกันช่วยเหลือเพื่อเป็นทุนช่วยเหลือโรงเรียนและยังสามารถลดหย่อนภาษีได้2เท่า <br><b><a href="https://www.facebook.com/profile.php?id=100063797620749">ข้อมูลโรงเรียนเพิ่มเติม</a></b>
             </p>
             <a href="#" class="bg-green-500 text-white px-6 py-2 rounded-lg hover:bg-green-600">ร่วมบริจาค</a>
+        </div>
+        <!-- QR Code Preview Modal -->
+        <div id="qrPreviewModal" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 hidden">
+            <div class="bg-white rounded-lg shadow-lg p-4 relative max-w-xs w-full">
+                <button id="closeQrPreview" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+                <img src="./images/BanjuenueraeSchool-QrCode.png" alt="QR Code Preview" class="mx-auto w-full h-auto">
+            </div>
         </div>
     </section>
 
@@ -36,5 +43,21 @@
             <p>&copy; 2024 บริจาคได้บุญ. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        // Show QR preview modal
+        document.getElementById('qrPreviewBtn').onclick = function() {
+            document.getElementById('qrPreviewModal').classList.remove('hidden');
+        };
+        // Hide QR preview modal
+        document.getElementById('closeQrPreview').onclick = function() {
+            document.getElementById('qrPreviewModal').classList.add('hidden');
+        };
+        // Close QR preview modal when clicking outside the modal content
+        document.getElementById('qrPreviewModal').onclick = function(e) {
+            if (e.target === this) {
+                this.classList.add('hidden');
+            }
+        };
+    </script>
 </body>
 </html>
