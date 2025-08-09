@@ -22,12 +22,26 @@
                 บริจาคให้กับมัสยิดเพื่อบำรุงศาสนสถานและยังสามารถลดหย่อนภาษีได้
             </p>
             <img src="./images/MasjidIqamussolah.jpg" width="90%" height="90%" alt="บริจาคให้กับมัสยิคอิกอมุสซอลาฮ์" ><br>
-            <img src="./images/MasjidIqamussolah-QrCode.png" width="90%" height="90%" alt="บริจาคให้กับมัสยิคอิกอมุสซอลาฮ์" >
+            <img src="./images/MasjidIqamussolah-QrCode.png" width="50%" height="50%" alt="บริจาคให้กับมัสยิคอิกอมุสซอลาฮ์"
+                id="qrPreviewBtn"
+                class="cursor-pointer relative group"
+                style="display:inline-block;position:relative;">
+            <span id="qrHint" class="absolute left-1/2 -translate-x-1/2 mt-2 px-3 py-1 rounded bg-black text-white text-xs opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-200"
+                style="top:100%;white-space:nowrap;z-index:10;">
+                คลิ๊กเพื่อดู QR Code
+            </span>
             <p class="text-gray-700 mb-4">
                 ร่วมกันช่วยเหลือเพื่อเป็นทุนช่วยเหลือโรงเรียนและยังสามารถลดหย่อนภาษีได้<br><b><a href="https://www.facebook.com/profile.php?id=100076767303770">ข้อมูลมัสยิดเพิ่มเติม</a></b>
             </p>
             
             <a href="#" class="bg-green-500 text-white px-6 py-2 rounded-lg hover:bg-green-600">ร่วมบริจาค</a>
+        </div>
+        <!-- QR Code Preview Modal -->
+        <div id="qrPreviewModal" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 hidden">
+            <div class="bg-white rounded-lg shadow-lg p-4 relative max-w-xs w-full">
+                <button id="closeQrPreview" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+                <img src="./images/MasjidIqamussolah-QrCode.png" alt="QR Code Preview" class="mx-auto w-full h-auto">
+            </div>
         </div>
     </section>
 
@@ -37,5 +51,26 @@
             <p>&copy; 2024 บริจาคได้บุญ. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        // Show QR preview modal
+        document.getElementById('qrPreviewBtn').onclick = function() {
+            document.getElementById('qrPreviewModal').classList.remove('hidden');
+        };
+        // Hide QR preview modal
+        document.getElementById('closeQrPreview').onclick = function() {
+            document.getElementById('qrPreviewModal').classList.add('hidden');
+        };
+        // Close QR preview modal when clicking outside the modal content
+        document.getElementById('qrPreviewModal').onclick = function(e) {
+            if (e.target === this) {
+                this.classList.add('hidden');
+            }
+        };
+        // Tooltip show/hide for browsers that don't support :hover on span
+        var qrBtn = document.getElementById('qrPreviewBtn');
+        var qrHint = document.getElementById('qrHint');
+        qrBtn.onmouseenter = function() { qrHint.style.opacity = 1; };
+        qrBtn.onmouseleave = function() { qrHint.style.opacity = 0; };
+    </script>
 </body>
 </html>
